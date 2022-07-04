@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+  font-size: 62.5%;
+  width: auto;
+}
+/**HEADING*/
+header {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+span {
+  font-size: 2rem;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: 100;
+  font-style: italic;
+}
+
+/**HEADING ENDS*/
+
+/**MAIN STARTS HERE*/
+main {
+  max-width: 1130px;
+  margin: auto;
+}
+
+.selection {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+select {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  width: 500px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 400px;
+  max-height: auto;
+  display: block;
+  border-radius: 2rem;
+}
+
+p {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: -1rem;
+}
+#dog-name {
+  font-size: 5rem;
+}
+
+.card {
+  margin: 1rem;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Josefin Sans';
+  padding-bottom: 2rem;
+}
+
+ul {
+  display: flex;
+  padding: 1rem 0;
+}
+
+li {
+  list-style: none;
+  padding-right: 1rem;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.feature {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.characteristics {
+  display: flex;
+  flex-direction: column;
+}
