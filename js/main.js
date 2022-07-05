@@ -37,6 +37,9 @@ select.addEventListener('change', event => {
     });
 
   doggoInfo.assignSex();
+  doggoInfo.assignLikes();
+  doggoInfo.assignDislikes();
+  doggoInfo.assignFacts();
   doggoInfo.assignAge();
 });
 
@@ -639,7 +642,7 @@ const doggoInfo = {
     'Broccoli',
     'Carrots',
     'Vegetables',
-    'Vacuum clearners',
+    'Vacuum cleaners',
     'Puddles',
     'Bathing',
     'Not being included',
@@ -727,6 +730,35 @@ const doggoInfo = {
   assignName(array) {
     this.rname = array[Math.floor(Math.random() * array.length)];
     document.getElementById('dog-name').innerHTML = `${this.rname}`;
+  },
+
+  yatesShuffle(array) {
+    let m = array.length,
+      t,
+      i;
+    //while there remain elements to shuffle
+    while (m) {
+      i = Math.floor(Math.random() * m--);
+      t = array[m];
+      array[m] = array[i];
+      array[i] = t;
+    }
+    return array;
+  },
+
+  assignLikes() {
+    this.likes = this.yatesShuffle(this.likesList).slice(0, 3);
+    document.getElementById('likes').innerHTML = `${this.likes[0]}, ${this.likes[1]}, ${this.likes[2]}`;
+  },
+
+  assignDislikes() {
+    this.dislikes = this.yatesShuffle(this.dislikesList).slice(0, 3);
+    document.getElementById('dislikes').innerHTML = `${this.dislikes[0]}, ${this.dislikes[1]}, ${this.dislikes[2]}`;
+  },
+
+  assignFacts() {
+    this.fact = this.yatesShuffle(this.factList).slice(0, 1);
+    document.getElementById('fun-fact').innerHTML = `${this.fact[0]}`;
   },
 
   assignAge() {

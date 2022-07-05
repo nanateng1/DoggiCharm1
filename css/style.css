@@ -10,6 +10,20 @@ html {
   font-size: 62.5%;
   width: auto;
 }
+.main-container {
+  text-align: center;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #fbda61 0%, #ff5acd 100%);
+  box-shadow: 5px 5px 10px hsl(318, 52%, 35%), -5px -5px 10px #fde488;
+}
+
+/* .item {
+  padding: 30px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #fbda61 0%, #ff5acd 100%);
+  box-shadow: 5px 5px 10px hsl(318, 52%, 35%), -5px -5px 10px #fde488;
+} */
+
 /**HEADING*/
 header {
   text-align: center;
@@ -62,6 +76,7 @@ img {
   max-height: auto;
   display: block;
   border-radius: 2rem;
+  box-shadow: 5px 5px 10px hsl(0, 0%, 12%), -5px -5px 10px #848484;
 }
 
 p {
