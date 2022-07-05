@@ -11,7 +11,6 @@ html {
   width: auto;
 }
 .main-container {
-  text-align: center;
   border-radius: 50px;
   background: linear-gradient(135deg, #fbda61 0%, #ff5acd 100%);
   box-shadow: 5px 5px 10px hsl(318, 52%, 35%), -5px -5px 10px #fde488;
