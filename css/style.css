@@ -72,7 +72,7 @@ select {
 
 img {
   max-width: 400px;
-  max-height: auto;
+  max-height: 400px;
   display: block;
   border-radius: 2rem;
   box-shadow: 5px 5px 10px hsl(0, 0%, 12%), -5px -5px 10px #848484;
