@@ -65,7 +65,8 @@ select {
   font-family: 'Poppins', sans-serif;
   width: 500px;
 }
-.container {
+
+.img-section {
   display: flex;
   justify-content: center;
 }
@@ -120,4 +121,12 @@ li {
 .characteristics {
   display: flex;
   flex-direction: column;
+}
+
+/* media queries */
+@media screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
